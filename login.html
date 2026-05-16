@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="EduMapa">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="index.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+    <title>EduMapa - Iniciar Sesión</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neuton:wght@400;700&family=Port+Lligat+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+     <header class="header">
+        <div class="header-logo"><a href="inicio.html" tabindex="1"><img src="img/logoedumapa2.png" alt="Logotipo principal de EduMapa"></a></div>
+        <div class="nombre"><h1>EDUMAPA</h1></div>
+
+
+        
+        <div class="lang-switch dropdown-interactivo">
+            <button class="lang-boton" type="button" tabindex="3" aria-label="Cambiar idioma"><i class="fa-solid fa-globe" aria-hidden="true"></i></button>
+            <ul class="lang-list lista-desplegable">
+                <li><a href="login.html" tabindex="4">ES</a></li>
+                <li><a href="en/login.html" tabindex="5">EN</a></li>
+                <li><a href="fr/login.html" tabindex="6">FR</a></li>
+            </ul>
+        </div>
+
+    </header>
+    <div class="breadcrumbs-container">
+        <ul class="breadcrumbs">
+            <li><a href="index.html" tabindex="6"><i class="fa-solid fa-house" aria-hidden="true"></i> Principal</a></li>
+            <li><a href="login.html" class="active">Iniciar Sesión</a></li>
+        </ul>
+    </div>
+
+    <main class="container mb-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6">
+                
+                <section class="login-container w-100">
+                    <h2>Accede a tu Cuenta</h2>
+                    
+                    <form class="login-form" action="inicio.html" method="GET">
+                        
+                        <label for="username"><i class="fa-solid fa-user" aria-hidden="true"></i> Usuario o Correo</label>
+                        <input type="text" id="username" name="username" placeholder="Escribe tu correo o usuario" required tabindex="7">
+
+                        <label for="password"><i class="fa-solid fa-lock" aria-hidden="true"></i> Contraseña</label>
+                        <input type="password" id="password" name="password" placeholder="Tu contraseña" required tabindex="8">
+
+                        <div class="remember-me">
+                            <input type="checkbox" id="remember" name="remember" tabindex="9">
+                            <label for="remember">Recordarme</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-login-submit" tabindex="10"><i class="fa-solid fa-arrow-right-to-bracket" aria-hidden="true"></i> Iniciar Sesión</button>
+
+                        <div class="login-links">
+                           <a href="contraseña.html" tabindex="11"><i class="fa-solid fa-key" aria-hidden="true"></i> ¿Olvidaste tu Contraseña?</a>
+                           <a href="register.html" tabindex="12"><i class="fa-solid fa-user-plus" aria-hidden="true"></i> ¿No tienes cuenta? Regístrate aquí.</a>
+                        </div>
+                    </form>
+                </section>
+
+            </div>
+        </div>
+    </main>
+ <footer>
+        <div class="footer-content">
+            <div class="contactar">
+                <h4>Contacto y Soporte</h4>
+                <ul class="footer-links">
+                    <li><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a href="mailto:contacto@edumapa.com" >contacto@edumapa.com</a></li>
+                    <li><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+34927000000" >+34 927 65 32 76</a></li>
+                    <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <a href="#" >Cáceres, España</a></li>
+                </ul>
+            </div>
+            <div class="policies">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#" tabindex="27">Política de Privacidad</a></li>
+                    <li><a href="#" tabindex="28">Términos de Servicio</a></li>
+                    <li><a href="#" tabindex="29">Política de Cookies</a></li>
+                </ul>
+            </div>
+            <div class="social-links">
+                <h4>Síguenos</h4>
+                <ul class="footer-links">
+                    <li><a href="https://www.instagram.com" target="_blank" rel="noopener" tabindex="30" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+                    <li><a href="https://twitter.com" target="_blank" rel="noopener" tabindex="31" aria-label="Twitter"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i> Twitter/X</a></li>
+                    <li><a href="https://www.facebook.com" target="_blank" rel="noopener" tabindex="32" aria-label="Facebook"><i class="fa-brands fa-facebook" aria-hidden="true"></i> Facebook</a></li>
+                </ul>
+            </div>
+            <div class="footer-logo">
+                <div class="payment-methods">
+                    <i class="fa-brands fa-stripe icon-stripe" title="Stripe" aria-hidden="true"></i> 
+                    <i class="fa-brands fa-paypal icon-paypal" title="PayPal" aria-hidden="true"></i>
+                </div>
+                <img src="img/logoedumapa2.png" alt="Logo de EduMapa en el pie de página">
+            </div>
+        </div>
+         <div class="footer-bottom text-center">
+            <a href="https://edumapa.page.gd/">EduMapa</a> © 2026 by <a href="https://edumapa.page.gd/">Alba Noguera
+            </a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a><img
+                src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt=""><img
+                src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt=""><img
+                src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt=""><img
+                src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" alt="">
+        </div>
+    </footer>
+</body>
+</html>

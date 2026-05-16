@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="EduMapa">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="index.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+    <title>EduMapa - Mi inicio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neuton:wght@400;700&family=Port+Lligat+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-logo"><a href="inicio.html" tabindex="1"><img src="img/logoedumapa2.png" alt="Logotipo principal de EduMapa"></a></div>
+        <div class="nombre"><h1>EDUMAPA</h1></div>
+
+        <div class="header-secundario">
+            <form action="apuntes_resultados.html" method="GET" class="search-form-header">
+                <input type="text" name="q" placeholder="Buscar apuntes..." class="search-bar-input" tabindex="2" />
+            </form>
+        </div>
+        
+        <div class="lang-switch dropdown-interactivo">
+            <button class="lang-boton" type="button" tabindex="3" aria-label="Cambiar idioma"><i class="fa-solid fa-globe" aria-hidden="true"></i></button>
+            <ul class="lang-list lista-desplegable">
+                <li><a href="inicio.html" tabindex="4">ES</a></li>
+                <li><a href="en/inicio.html" tabindex="5">EN</a></li>
+                <li><a href="fr/inicio.html" tabindex="6">FR</a></li>
+            </ul>
+        </div>
+
+        <nav class="nav">
+            <div class="menu-options dropdown-interactivo">
+                <button class="menu-boton" tabindex="7"><i class="fa-solid fa-bars" aria-hidden="true"></i> Menú</button>
+                <ul class="menu-list lista-desplegable">
+                    <li><a href="inicio.html" tabindex="8"><i class="fa-solid fa-house" aria-hidden="true"></i> Inicio</a></li>
+                    <li><a href="apuntes.html" tabindex="9"><i class="fa-solid fa-book-open" aria-hidden="true"></i> Apuntes</a></li>
+                    <li><a href="video.html" tabindex="10"><i class="fa-solid fa-video" aria-hidden="true"></i> Video</a></li>
+                    <li><a href="calendario.html" tabindex="11"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i> Calendario</a></li>
+                    <li><a href="historial_descargas.html" tabindex="16"><i class="fa-solid fa-clock-rotate-left" aria-hidden="true"></i> Historial</a></li>
+                    <li><a href="login.html" tabindex="19"><i class="fa-solid fa-right-from-bracket" aria-hidden="true"></i> Cerrar Sesión</a></li>
+                    
+                </ul>
+            </div>
+            
+            <div class="notifications">
+                <a href="notificaciones.html" class="btn notification-btn" aria-label="Ver notificaciones" tabindex="20"><i class="fa-solid fa-bell" aria-hidden="true"></i></a>
+            </div>
+        </nav>
+    </header>
+    <div class="breadcrumbs-container">
+        <ul class="breadcrumbs">
+            <li><a href="inicio.html" class="active" tabindex="21"><i class="fa-solid fa-house" aria-hidden="true"></i> Mi Inicio</a></li>
+        </ul>
+    </div>
+
+    <main class="container mt-4 mb-5">
+
+        <section class="welcome-area w-100">
+            <h2><i class="fa-solid fa-hand-wave" aria-hidden="true"></i> ¡Bienvenido/a  a Edumapa!</h2>
+            <p>Tu centro de actividad académica.Aqui encontrarás todo lo que necesitas para tu aprendizaje.</p>
+        </section>
+
+        <section class="mt-4">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                
+                <div class="col">
+                    <article class="widget h-100">
+                        <h3><i class="fa-solid fa-calendar-check" aria-hidden="true"></i> Próximas Entregas</h3>
+                        <ul>
+                            <li><span class="due-date">13/05/2026:</span> Control mates</li>
+                            <li><span class="due-date">20/05/2026:</span> Proyecto final</li>
+                        </ul>
+                        <a href="calendario.html" class="btn btn-widget mt-auto" tabindex="22">Ver Calendario Completo</a>
+                    </article>
+                </div>
+
+                
+
+                <div class="col">
+                    <article class="widget widget-quick-access h-100">
+                        <h3><i class="fa-solid fa-bolt" aria-hidden="true"></i> Acceso Rápido</h3>
+                        <div class="quick-links">
+                            <a href="apuntes.html" class="quick-link-btn" tabindex="24"><i class="fa-solid fa-search" aria-hidden="true"></i> Explorar Apuntes</a>
+                            <a href="subir_apunte.html" class="quick-link-btn" tabindex="25"><i class="fa-solid fa-upload" aria-hidden="true"></i> Subir Apunte Nuevo</a>
+                            <a href="mis_apuntes.html" class="quick-link-btn" tabindex="26"><i class="fa-solid fa-file-arrow-up" aria-hidden="true"></i> Explorar tus apuntes</a>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+     <footer>
+        <div class="footer-content">
+            <div class="contactar">
+                <h4>Contacto y Soporte</h4>
+                <ul class="footer-links">
+                    <li><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a href="mailto:contacto@edumapa.com" >contacto@edumapa.com</a></li>
+                    <li><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+34927000000" >+34 927 65 32 76</a></li>
+                    <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <a href="#" >Cáceres, España</a></li>
+                </ul>
+            </div>
+            <div class="policies">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#" tabindex="27">Política de Privacidad</a></li>
+                    <li><a href="#" tabindex="28">Términos de Servicio</a></li>
+                    <li><a href="#" tabindex="29">Política de Cookies</a></li>
+                </ul>
+            </div>
+            <div class="social-links">
+                <h4>Síguenos</h4>
+                <ul class="footer-links">
+                    <li><a href="https://www.instagram.com" target="_blank" rel="noopener" tabindex="30" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+                    <li><a href="https://twitter.com" target="_blank" rel="noopener" tabindex="31" aria-label="Twitter"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i> Twitter/X</a></li>
+                    <li><a href="https://www.facebook.com" target="_blank" rel="noopener" tabindex="32" aria-label="Facebook"><i class="fa-brands fa-facebook" aria-hidden="true"></i> Facebook</a></li>
+                </ul>
+            </div>
+            <div class="footer-logo">
+                <div class="payment-methods">
+                    <i class="fa-brands fa-stripe icon-stripe" title="Stripe" aria-hidden="true"></i> 
+                    <i class="fa-brands fa-paypal icon-paypal" title="PayPal" aria-hidden="true"></i>
+                </div>
+                <img src="img/logoedumapa2.png" alt="Logo de EduMapa en el pie de página">
+            </div>
+        </div>
+         <div class="footer-bottom text-center">
+            <a href="https://edumapa.page.gd/">EduMapa</a> © 2026 by <a href="https://edumapa.page.gd/">Alba Noguera
+            </a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a><img
+                src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt=""><img
+                src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt=""><img
+                src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt=""><img
+                src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" alt="">
+        </div>
+    </footer>
+</body>
+</html>

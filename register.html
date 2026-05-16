@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="EduMapa">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="index.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+    <title>EduMapa - Registrarse</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neuton:wght@400;700&family=Port+Lligat+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+     <header class="header">
+        <div class="header-logo"><a href="inicio.html" tabindex="1"><img src="img/logoedumapa2.png" alt="Logotipo principal de EduMapa"></a></div>
+        <div class="nombre"><h1>EDUMAPA</h1></div>
+
+
+        
+        <div class="lang-switch dropdown-interactivo">
+            <button class="lang-boton" type="button" tabindex="3" aria-label="Cambiar idioma"><i class="fa-solid fa-globe" aria-hidden="true"></i></button>
+            <ul class="lang-list lista-desplegable">
+                <li><a href="register.html" tabindex="4">ES</a></li>
+                <li><a href="en/register.html" tabindex="5">EN</a></li>
+                <li><a href="fr/register.html" tabindex="6">FR</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <div class="breadcrumbs-container">
+        <ul class="breadcrumbs">
+            <li><a href="index.html" tabindex="6"><i class="fa-solid fa-house" aria-hidden="true"></i> Principal</a></li>
+            <li><a href="register.html" class="active">Crear Cuenta</a></li>
+        </ul>
+    </div>
+
+    <main class="container mb-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6">
+                
+                <section class="register-container w-100">
+                    <h2>Únete a EduMapa</h2>
+                    
+                    <form class="register-form" action="inicio.html" method="GET">
+                        
+                        <fieldset>
+                            <legend class="register-type-label"><i class="fa-solid fa-users" aria-hidden="true"></i> ¿Cómo vas a usar EduMapa?</legend>
+                            <div class="register-type-group">
+                                <label class="register-type-option">
+                                    <input type="radio" name="user_type" value="estudiante" checked tabindex="7">
+                                    <span>Soy Estudiante (Quiero descargar apuntes)</span>
+                                </label>
+                                <label class="register-type-option">
+                                    <input type="radio" name="user_type" value="creador" tabindex="8">
+                                    <span>Soy Creador (Quiero subir y vender apuntes)</span>
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <label for="reg-username"><i class="fa-solid fa-user" aria-hidden="true"></i> Nombre de Usuario</label>
+                        <input type="text" id="reg-username" name="reg-username" placeholder="Ej: @Estudiante10" required tabindex="9">
+
+                        <label for="reg-email"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Correo Electrónico</label>
+                        <input type="email" id="reg-email" name="reg-email" placeholder="tu@correo.com" required tabindex="10">
+
+                        <label for="reg-password"><i class="fa-solid fa-lock" aria-hidden="true"></i> Contraseña</label>
+                        <input type="password" id="reg-password" name="reg-password" placeholder="Crea una contraseña segura" required tabindex="11">
+
+                        <div class="terms-check mt-20">
+                            <input type="checkbox" id="terms" name="terms" required tabindex="12">
+                            <label for="terms">Acepto los <a href="#" tabindex="13">Términos y Condiciones</a> y la Política de Privacidad.</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-register-submit" tabindex="14"><i class="fa-solid fa-user-plus" aria-hidden="true"></i> Crear Cuenta</button>
+
+                        <div class="register-links">
+                            <a href="login.html" tabindex="15"><i class="fa-solid fa-arrow-right-to-bracket" aria-hidden="true"></i> ¿Ya tienes cuenta? Inicia Sesión</a>
+                        </div>
+                    </form>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contactar">
+                <h4>Contacto y Soporte</h4>
+                <ul class="footer-links">
+                    <li><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a href="mailto:contacto@edumapa.com" >contacto@edumapa.com</a></li>
+                    <li><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+34927000000" >+34 927 65 32 76</a></li>
+                    <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <a href="#" >Cáceres, España</a></li>
+                </ul>
+            </div>
+            <div class="policies">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#" tabindex="27">Política de Privacidad</a></li>
+                    <li><a href="#" tabindex="28">Términos de Servicio</a></li>
+                    <li><a href="#" tabindex="29">Política de Cookies</a></li>
+                </ul>
+            </div>
+            <div class="social-links">
+                <h4>Síguenos</h4>
+                <ul class="footer-links">
+                    <li><a href="https://www.instagram.com" target="_blank" rel="noopener" tabindex="30" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+                    <li><a href="https://twitter.com" target="_blank" rel="noopener" tabindex="31" aria-label="Twitter"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i> Twitter/X</a></li>
+                    <li><a href="https://www.facebook.com" target="_blank" rel="noopener" tabindex="32" aria-label="Facebook"><i class="fa-brands fa-facebook" aria-hidden="true"></i> Facebook</a></li>
+                </ul>
+            </div>
+            <div class="footer-logo">
+                <div class="payment-methods">
+                    <i class="fa-brands fa-stripe icon-stripe" title="Stripe" aria-hidden="true"></i> 
+                    <i class="fa-brands fa-paypal icon-paypal" title="PayPal" aria-hidden="true"></i>
+                </div>
+                <img src="img/logoedumapa2.png" alt="Logo de EduMapa en el pie de página">
+            </div>
+        </div>
+         <div class="footer-bottom text-center">
+            <a href="https://edumapa.page.gd/">EduMapa</a> © 2026 by <a href="https://edumapa.page.gd/">Alba Noguera
+            </a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a><img
+                src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt=""><img
+                src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt=""><img
+                src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt=""><img
+                src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" alt="">
+        </div>
+    </footer>
+</body>
+</html>
