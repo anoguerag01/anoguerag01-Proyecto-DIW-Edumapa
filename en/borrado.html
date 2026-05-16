@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="EduMapa">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../index.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+
+    <title>EduMapa - Note Deleted</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neuton:wght@400;700&family=Port+Lligat+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+        <div class="header-logo"><a href="inicio.html" tabindex="1"><img src="../img/logoedumapa2.png" alt="EduMapa Main Logo"></a></div>
+        <div class="nombre"><h1>EDUMAPA</h1></div>
+
+        <div class="header-secundario">
+            <form action="apuntes_resultados.html" method="GET" class="search-form-header">
+                <input type="text" name="q" placeholder="Search notes..." class="search-bar-input" tabindex="2" />
+            </form>
+        </div>
+        
+        <div class="lang-switch dropdown-interactivo">
+            <button class="lang-boton" type="button" tabindex="3" aria-label="Change language"><i class="fa-solid fa-globe" aria-hidden="true"></i></button>
+            <ul class="lang-list lista-desplegable">
+                <li><a href="../borrado.html" tabindex="4">ES</a></li>
+                <li><a href="borrado.html" tabindex="5">EN</a></li>
+                <li><a href="../fr/borrado.html" tabindex="6">FR</a></li>
+            </ul>
+        </div>
+
+        <nav class="nav">
+            <div class="menu-options dropdown-interactivo">
+                <button class="menu-boton" tabindex="7"><i class="fa-solid fa-bars" aria-hidden="true"></i> Menu</button>
+                <ul class="menu-list lista-desplegable">
+                    <li><a href="inicio.html" tabindex="8"><i class="fa-solid fa-house" aria-hidden="true"></i> Home</a></li>
+                    <li><a href="apuntes.html" tabindex="9"><i class="fa-solid fa-book-open" aria-hidden="true"></i> Notes</a></li>
+                    <li><a href="video.html" tabindex="10"><i class="fa-solid fa-video" aria-hidden="true"></i> Video</a></li>
+                    <li><a href="calendario.html" tabindex="11"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i> Calendar</a></li>
+                    <li><a href="mis_apuntes.html" tabindex="15"><i class="fa-solid fa-file-arrow-up" aria-hidden="true"></i> My Notes</a></li>
+                    <li><a href="login.html" tabindex="19"><i class="fa-solid fa-right-from-bracket" aria-hidden="true"></i> Log Out</a></li>
+                </ul>
+            </div>
+            
+            <div class="notifications">
+                <a href="notificaciones.html" class="btn notification-btn" aria-label="View notifications" tabindex="20"><i class="fa-solid fa-bell" aria-hidden="true"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-4 mb-5 d-flex justify-content-center align-items-center">
+        <div class="login-container w-100">
+            <div class="login-form shadow-sm text-center">
+                
+                <i class="fa-solid fa-circle-check fa-4x icon-green mb-4"></i>
+                
+                <h2 class="mb-3">Note successfully deleted!</h2>
+                <p class="text-muted fs-5 mb-4">Your deletion request has been processed successfully.</p>
+                
+                <a href="mis_apuntes_lleno.html" class="text-muted text-decoration-underline" tabindex="22">
+                        Return to my notes page
+                </a>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contactar">
+                <h4>Contact & Support</h4>
+                <ul class="footer-links">
+                    <li><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a href="mailto:contacto@edumapa.com" >contacto@edumapa.com</a></li>
+                    <li><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+34927000000" >+34 927 65 32 76</a></li>
+                    <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <a href="#" >Cáceres, Spain</a></li>
+                </ul>
+            </div>
+            <div class="policies">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#" tabindex="27">Privacy Policy</a></li>
+                    <li><a href="#" tabindex="28">Terms of Service</a></li>
+                    <li><a href="#" tabindex="29">Cookie Policy</a></li>
+                </ul>
+            </div>
+            <div class="social-links">
+                <h4>Follow Us</h4>
+                <ul class="footer-links">
+                    <li><a href="https://www.instagram.com" target="_blank" rel="noopener" tabindex="30" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+                    <li><a href="https://twitter.com" target="_blank" rel="noopener" tabindex="31" aria-label="Twitter"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i> Twitter/X</a></li>
+                    <li><a href="https://www.facebook.com" target="_blank" rel="noopener" tabindex="32" aria-label="Facebook"><i class="fa-brands fa-facebook" aria-hidden="true"></i> Facebook</a></li>
+                </ul>
+            </div>
+            <div class="footer-logo">
+                <div class="payment-methods">
+                    <i class="fa-brands fa-stripe icon-stripe" title="Stripe" aria-hidden="true"></i> 
+                    <i class="fa-brands fa-paypal icon-paypal" title="PayPal" aria-hidden="true"></i>
+                </div>
+                <img src="../img/logoedumapa2.png" alt="EduMapa Logo in footer">
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <a href="https://edumapa.page.gd/">EduMapa</a> © 2026 by <a href="https://edumapa.page.gd/">Alba Noguera
+            </a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a><img
+                src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt=""><img
+                src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt=""><img
+                src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt=""><img
+                src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" alt="">
+        </div>
+    </footer>
+
+</body>
+</html>

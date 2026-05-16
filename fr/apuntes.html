@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="EduMapa">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../index.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+
+    <title>EduMapa - Explorer les Notes</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neuton:wght@400;700&family=Port+Lligat+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-logo"><a href="inicio.html" tabindex="1"><img src="../img/logoedumapa2.png" alt="Logotype EduMapa"></a></div>
+        <div class="nombre"><h1>EDUMAPA</h1></div>
+
+        <div class="header-secundario">
+            <form action="apuntes.html" method="GET" style="display: flex; width: 100%;">
+                <input type="text" name="q" placeholder="Rechercher des notes..." class="search-bar small" tabindex="2" />
+                <button type="submit" style="display: none;"></button>
+            </form>
+        </div>
+        
+        <div class="lang-switch dropdown-interactivo">
+            <button class="lang-boton" type="button" tabindex="3" aria-label="Changer de langue"><i class="fa-solid fa-globe" aria-hidden="true"></i></button>
+            <ul class="lang-list lista-desplegable">
+                <li><a href="../apuntes.html" tabindex="4">ES</a></li>
+                <li><a href="../en/apuntes.html" tabindex="5">EN</a></li>
+                <li><a href="apuntes.html" tabindex="6">FR</a></li>
+            </ul>
+        </div>
+
+        <nav class="nav">
+            <div class="menu-options dropdown-interactivo">
+                <button class="menu-boton" tabindex="7"><i class="fa-solid fa-bars" aria-hidden="true"></i> Menu</button>
+                <ul class="menu-list lista-desplegable">
+                    <li><a href="inicio.html" tabindex="8"><i class="fa-solid fa-house" aria-hidden="true"></i> Accueil</a></li>
+                    <li><a href="apuntes.html" tabindex="9"><i class="fa-solid fa-book-open" aria-hidden="true"></i> Notes</a></li>
+                    <li><a href="video.html" tabindex="10"><i class="fa-solid fa-video" aria-hidden="true"></i> Vidéo</a></li>
+                    <li><a href="calendario.html" tabindex="11"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i> Calendrier</a></li>
+                    <li><a href="mis_apuntes.html" tabindex="15"><i class="fa-solid fa-file-arrow-up" aria-hidden="true"></i> Mes Notes</a></li>
+                    <li><a href="login.html" tabindex="19"><i class="fa-solid fa-right-from-bracket" aria-hidden="true"></i> Déconnexion</a></li>
+                </ul>
+            </div>
+            
+            <div class="notifications">
+                <a href="notificaciones.html" class="btn notification-btn" aria-label="Voir les notifications" tabindex="20"><i class="fa-solid fa-bell" aria-hidden="true"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="breadcrumbs-container">
+        <ul class="breadcrumbs">
+            <li><a href="inicio.html" tabindex="21"><i class="fa-solid fa-house" aria-hidden="true"></i> Accueil</a></li>
+            <li><a href="apuntes.html" class="active">Explorer les Notes</a></li>
+        </ul>
+    </div>
+
+   <main class="container mb-5 mt-4">
+        <div class="row g-4">
+            
+            <div class="col-12 col-lg-3">
+                <aside class="sidebar-filters shadow-sm"> 
+                    <h3><i class="fa-solid fa-filter"></i> Filtres</h3>
+                    
+                    <form class="filters-form" action="apuntes_resultados.html" method="GET">
+                        <div class="filter-group">
+                            <label for="materia">Matière :</label>
+                            <input type="text" id="materia" name="materia" class="form-control" placeholder="Ex: Histoire" tabindex="22"required>
+                        </div>
+
+                        <div class="filter-group"> 
+                            <label for="tipo">Type :</label>
+                            <select id="tipo" name="tipo" class="form-select" tabindex="23">
+                                <option value="all">Tous</option>
+                                <option value="premium">Premium (€)</option>
+                                <option value="gratis">Gratuits</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-filter-submit w-100" tabindex="25">
+                            Appliquer les Filtres
+                        </button>
+                    </form>
+                </aside>
+            </div>
+
+            <div class="col-12 col-lg-9">
+                <section class="apuntes-results w-100"> 
+                    
+                    <div class="results-header border-bottom pb-3 mb-4">
+                        <h2 class="mb-0">Résultats</h2>
+                    </div>
+                    
+                    <div class="no-results-box my-5 text-center">
+                        <i class="fa-solid fa-folder-open icon-placeholder"></i>
+                        <p class="h4 empty-message-title">Aucune note disponible pour le moment.</p>
+                    </div>
+
+                    <div class="d-flex justify-content-end align-items-center border-top pt-4 mt-5">
+                        <a href="subir_apunte.html" class="btn btn-upload-apunte" tabindex="26">
+                            <i class="fa-solid fa-upload"></i> Publier une Note
+                        </a>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contactar">
+                <h4>Contact et Support</h4>
+                <ul class="footer-links">
+                    <li><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a href="mailto:contacto@edumapa.com" >contacto@edumapa.com</a></li>
+                    <li><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+34927000000" >+34 927 65 32 76</a></li>
+                    <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <a href="#" >Cáceres, Espagne</a></li>
+                </ul>
+            </div>
+            <div class="policies">
+                <h4>Légal</h4>
+                <ul>
+                    <li><a href="#" tabindex="32">Politique de Confidentialité</a></li>
+                    <li><a href="#" tabindex="33">Conditions d'Utilisation</a></li>
+                    <li><a href="#" tabindex="34">Politique de Cookies</a></li>
+                </ul>
+            </div>
+            <div class="social-links">
+                <h4>Suivez-nous</h4>
+                <ul class="footer-links">
+                    <li><a href="https://www.instagram.com" target="_blank" rel="noopener" tabindex="35" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+                    <li><a href="https://twitter.com" target="_blank" rel="noopener" tabindex="36" aria-label="Twitter"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i> Twitter/X</a></li>
+                    <li><a href="https://www.facebook.com" target="_blank" rel="noopener" tabindex="37" aria-label="Facebook"><i class="fa-brands fa-facebook" aria-hidden="true"></i> Facebook</a></li>
+                </ul>
+            </div>
+            <div class="footer-logo">
+                <div class="payment-methods">
+                    <i class="fa-brands fa-stripe" title="Stripe" aria-hidden="true"></i> 
+                    <i class="fa-brands fa-paypal" title="PayPal" aria-hidden="true"></i>
+                </div>
+                <img src="../img/logoedumapa2.png" alt="Logo EduMapa Pied de Page">
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <a href="https://edumapa.page.gd/">EduMapa</a> © 2026 by <a href="https://edumapa.page.gd/">Alba Noguera
+            </a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a><img
+                src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt=""><img
+                src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt=""><img
+                src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt=""><img
+                src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" alt="">
+        </div>
+    </footer>
+
+</body>
+</html>

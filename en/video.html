@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="EduMapa">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../index.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+
+    <title>EduMapa - Video</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neuton:wght@400;700&family=Port+Lligat+Slab&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-logo"><a href="inicio.html" tabindex="1"><img src="../img/logoedumapa2.png"
+                    alt="EduMapa Main Logo"></a></div>
+        <div class="nombre">
+            <h1>EDUMAPA</h1>
+        </div>
+
+        <div class="header-secundario">
+            <form action="apuntes_resultados.html" method="GET" class="search-form-header">
+                <input type="text" name="q" placeholder="Search notes..." class="search-bar-input" tabindex="2" />
+            </form>
+        </div>
+
+        <div class="lang-switch dropdown-interactivo">
+            <button class="lang-boton" type="button" tabindex="3" aria-label="Change language"><i
+                    class="fa-solid fa-globe" aria-hidden="true"></i></button>
+            <ul class="lang-list lista-desplegable">
+                <li><a href="../video.html" tabindex="4">ES</a></li>
+                <li><a href="video.html" tabindex="5">EN</a></li>
+                <li><a href="../fr/video.html" tabindex="6">FR</a></li>
+            </ul>
+        </div>
+
+        <nav class="nav">
+            <div class="menu-options dropdown-interactivo">
+                <button class="menu-boton" tabindex="7"><i class="fa-solid fa-bars" aria-hidden="true"></i> Menu</button>
+                <ul class="menu-list lista-desplegable">
+                    <li><a href="inicio.html" tabindex="8"><i class="fa-solid fa-house" aria-hidden="true"></i> Home</a></li>
+                    <li><a href="apuntes.html" tabindex="9"><i class="fa-solid fa-book-open" aria-hidden="true"></i> Notes</a></li>
+                    <li><a href="video.html" tabindex="10"><i class="fa-solid fa-video" aria-hidden="true"></i> Video</a></li>
+                    <li><a href="calendario.html" tabindex="11"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i> Calendar</a></li>
+                    <li><a href="mis_apuntes.html" tabindex="15"><i class="fa-solid fa-file-arrow-up" aria-hidden="true"></i> My Notes</a></li>
+                    <li><a href="login.html" tabindex="19"><i class="fa-solid fa-right-from-bracket" aria-hidden="true"></i> Log Out</a></li>
+                </ul>
+            </div>
+
+            <div class="notifications">
+                <a href="notificaciones.html" class="btn notification-btn" aria-label="View notifications"
+                    tabindex="20"><i class="fa-solid fa-bell" aria-hidden="true"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="breadcrumbs-container">
+        <ul class="breadcrumbs">
+            <li><a href="inicio.html" tabindex="21"><i class="fa-solid fa-house" aria-hidden="true"></i> Home</a></li>
+            <li><a href="video.html" class="active">Video </a></li>
+        </ul>
+    </div>
+
+    <main class="container mt-4 mb-5">
+        <div class="row justify-content-center">
+
+            <div class="col-12 col-lg-10">
+                <section class="video-content w-100 p-4 bg-white shadow-sm rounded border">
+
+                    <h2 class="mb-2"><i class="fa-solid fa-circle-play icon-primary" aria-hidden="true"></i>
+                        EduMapa Presentation</h2>
+                    <p class="text-muted mb-4"><i class="fa-solid fa-user-tie"></i> Created by: Alba Noguera | <i
+                            class="fa-solid fa-calendar-day"></i> Released: 2026</p>
+
+                    <div class="ratio ratio-16x9 bg-dark rounded overflow-hidden shadow-sm">
+
+                        <video controls poster="../img/logoedumapa2.png" tabindex="22"
+                            aria-label="Presentation video player">
+
+                            <source src="../video/EduMapa.mp4" type="video/mp4">
+
+                            <track src="../video/subtitulos_en.vtt" kind="subtitles" srclang="en" label="English"
+                                default>
+                            <track src="../video/subtitulos_es.vtt" kind="subtitles" srclang="es" label="Español">
+                            <track src="../video/subtitulos_fr.vtt" kind="subtitles" srclang="fr" label="Francés">
+
+                            <p>If subtitles do not load when opening the video from a folder, open the code using Visual
+                                Studio's Live Server.</p>
+                        </video>
+
+                    </div>
+
+                    <details class="transcripcion" tabindex="23">
+                        <summary><i class="fa-solid fa-chevron-down"></i> View full video transcript
+                            (Accessibility)</summary>
+
+                        <div class="transcripcion-texto mt-3 pt-3 border-top">
+                            <p>Have you ever lost your notes right before the exam or missed class and no one gives you
+                                what they covered?</p>
+                            <p>Don't worry, because that's why I created this application. It's a web platform designed
+                                by and for students where our goal is to make life much easier. It's the ultimate place
+                                to upload, organize, and find all the notes you need to pass.</p>
+                            <p>The idea is to create a great collaborative community. Here you can find notes on
+                                absolutely everything. Do you need a visual summary to understand the French Revolution?
+                                We have it. Looking for biology outlines or web programming tricks? They are here too.
+                            </p>
+                            <p>You just have to use the search engine, filter by subject, and in a couple of clicks,
+                                you'll have on your screen the best materials shared by your own classmates.</p>
+                            <p>And the best of all is how easy it is to do your part. Uploading your own notes takes
+                                seconds. Also, the application is fully responsive and accessible. What does this mean?
+                                Well, you can take a picture of your notebook and upload it directly from your mobile
+                                while riding the bus.</p>
+                            <p>The design is thought out with clear colors and fonts so you can read for hours without
+                                straining your eyes. But this isn't just a drawer to store PDFs, it's a community.</p>
+                            <p>That's why we have a chat section where you can ask questions live, debate a syllabus, or
+                                even form study groups.</p>
+                            <p>Ultimately, this is here so we can all help each other. Join, share your knowledge, find
+                                what you're missing, and go for that A+. See you inside.</p>
+                        </div>
+                    </details>
+
+                </section>
+                <article class="audio-content w-100 p-4 mt-4 bg-white shadow-sm rounded border">
+                    <h3 class="mb-3"><i class="fa-solid fa-headphones icon-purple" aria-hidden="true"></i> Audio</h3>
+
+
+                    <audio controls preload="metadata" class="w-100"
+                        aria-label="Reproductor de audio con resumen de estudio">
+                        <source src="../video/Record (online-voice-recorder.com).mp3" type="audio/mpeg">
+                    </audio>
+                </article>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contactar">
+                <h4>Contact & Support</h4>
+                <ul class="footer-links">
+                    <li><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a
+                            href="mailto:contacto@edumapa.com">contacto@edumapa.com</a></li>
+                    <li><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+34927000000">+34 927 65 32
+                            76</a></li>
+                    <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <a href="#">Cáceres, Spain</a></li>
+                </ul>
+            </div>
+            <div class="policies">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#" tabindex="27">Privacy Policy</a></li>
+                    <li><a href="#" tabindex="28">Terms of Service</a></li>
+                    <li><a href="#" tabindex="29">Cookie Policy</a></li>
+                </ul>
+            </div>
+            <div class="social-links">
+                <h4>Follow Us</h4>
+                <ul class="footer-links">
+                    <li><a href="https://www.instagram.com" target="_blank" rel="noopener" tabindex="30"
+                            aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                            Instagram</a></li>
+                    <li><a href="https://twitter.com" target="_blank" rel="noopener" tabindex="31"
+                            aria-label="Twitter"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i> Twitter/X</a>
+                    </li>
+                    <li><a href="https://www.facebook.com" target="_blank" rel="noopener" tabindex="32"
+                            aria-label="Facebook"><i class="fa-brands fa-facebook" aria-hidden="true"></i> Facebook</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-logo">
+                <div class="payment-methods">
+                    <i class="fa-brands fa-stripe icon-stripe" title="Stripe" aria-hidden="true"></i>
+                    <i class="fa-brands fa-paypal icon-paypal" title="PayPal" aria-hidden="true"></i>
+                </div>
+                <img src="../img/logoedumapa2.png" alt="EduMapa Logo in footer">
+            </div>
+        </div>
+         <div class="footer-bottom text-center">
+            <a href="https://edumapa.page.gd/">EduMapa</a> © 2026 by <a href="https://edumapa.page.gd/">Alba Noguera
+            </a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a><img
+                src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt=""><img
+                src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt=""><img
+                src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt=""><img
+                src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" alt="">
+        </div>
+    </footer>
+</body>
+
+</html>

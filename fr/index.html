@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="EduMapa">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link href="../index.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+
+  <title>EduMapa</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Neuton:wght@400;700&family=Port+Lligat+Slab&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header-logo"><a href="inicio.html" tabindex="1"><img src="../img/logoedumapa2.png" alt="Logo principal EduMapa"></a></div>
+        <div class="nombre"><h1>EDUMAPA</h1></div>
+
+        <div class="header-secundario">
+            <form action="apuntes_resultados.html" method="GET" class="search-form-header">
+                <input type="text" name="q" placeholder="Rechercher des notes..." class="search-bar-input" tabindex="2" />
+            </form>
+        </div>
+        
+        <div class="lang-switch dropdown-interactivo">
+            <button class="lang-boton" type="button" tabindex="3" aria-label="Changer de langue"><i class="fa-solid fa-globe" aria-hidden="true"></i></button>
+            <ul class="lang-list lista-desplegable">
+                <li><a href="../index.html" tabindex="4">ES</a></li>
+                <li><a href="../en/index.html" tabindex="5">EN</a></li>
+                <li><a href="index.html" tabindex="6">FR</a></li>
+            </ul>
+        </div>
+
+    <nav class="nav">
+      <div class="menu-options">
+        <button class="menu-boton" tabindex="7"><i class="fa-solid fa-bars" aria-hidden="true"></i> Menu</button>
+        <ul class="menu-list">
+          <li><a href="#que-es" tabindex="8">Qu'est-ce qu'EduMapa ?</a></li>
+          <li><a href="#contacto" tabindex="10">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="botones_iniciosesion">
+        <a href="login.html" class="btn login" type="button" tabindex="11"><i class="fa-solid fa-right-to-bracket" aria-hidden="true"></i> Connexion</a>
+        <a href="register.html" class="btn register btn-header-register" type="button" tabindex="12"><i class="fa-solid fa-user-plus" aria-hidden="true"></i> S'inscrire</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="main-content">
+      <h2>Apprenez, Partagez et Grandissez</h2><br>
+      <p class="hero-text">
+        Rejoignez notre communauté mondiale d'étudiants. <strong>Téléchargez vos notes et gagnez de l'argent</strong>, connectez-vous avec des collaborateurs à proximité sur la carte et organisez vos études.
+      </p>
+    </section>
+
+    <section id="que-es" class="info">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8">
+            <h3>Que pouvez-vous faire sur EduMapa ?</h3>
+            <ul type="none" class="feature-list">
+              <li><i class="fa-solid fa-book-open icon-green" aria-hidden="true"></i> <strong>Notes et Ressources : </strong> Téléchargez, vendez et achetez des fichiers d'étude de haute qualité.</li>
+              <li><i class="fa-solid fa-calendar-days icon-purple" aria-hidden="true"></i> <strong>Planification et Étude : </strong> Utilisez le calendrier pour les examens, les devoirs et les rappels automatiques.</li>
+              <li><i class="fa-solid fa-comments icon-green" aria-hidden="true"></i> <strong>Communication : </strong> Discutez avec d'autres utilisateurs en temps réel (en privé ou en groupe).</li>
+              <li><i class="fa-solid fa-map-location-dot icon-purple" aria-hidden="true"></i> <strong>Cartes et Localisation : </strong> Trouvez des groupes d'étude, des bibliothèques et des utilisateurs à proximité.</li>
+              <li><i class="fa-solid fa-star icon-green" aria-hidden="true"></i> <strong>Réputation et Réussites : </strong> Construisez votre profil, gagnez des succès et recevez des avis.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cards-section">
+      <div class="container">
+        <h2 style="margin-bottom: 40px;">Notes en Vedette (Premium et Gratuites)</h2>
+        
+        <div class="row g-4 justify-content-center">
+          <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+            <article class="card">
+              <img src="../img/foto_resu.jpg" alt="Couverture de la note en vedette" class="apunte-img-placeholder">
+              <h2>Histoire de l'Espagne - Thèmes 1 à 5</h2>
+              <p>Matière : <strong>Histoire</strong> | Auteur : Laura</p>
+              <p><i class="fa-solid fa-star icon-yellow" aria-hidden="true"></i> Évaluation : <strong>3/5</strong></p>
+              <p><i class="fa-solid fa-tag icon-green" aria-hidden="true"></i> Prix : <strong>2.50 €</strong></p>
+              <div class="card-actions">
+                <a href="checkout.html" class="btn buy-premium" tabindex="13"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i> Acheter le PDF</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+            <article class="card">
+              <img src="../img/apunte2.jpg" alt="Couverture de la note gratuite" class="apunte-img-placeholder">
+              <h2>Résumé Thème 2 Langue</h2>
+              <p>Matière : <strong>Langue</strong> | Auteur : Lara</p>
+              <p><i class="fa-solid fa-star icon-yellow" aria-hidden="true"></i> Évaluation : <strong>4.5/5</strong></p>
+              <p><i class="fa-solid fa-tag icon-green" aria-hidden="true"></i> Prix : <strong class="text-green">Gratuit</strong></p>
+              <div class="card-actions">
+                <a href="descarga.html" class="btn btn-download-free" tabindex="14"><i class="fa-solid fa-download" aria-hidden="true"></i> Télécharger</a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="cita-final">
+      <h2>Prêt à commencer à gagner de l'argent avec vos connaissances ?</h2>
+      <p>Téléchargez votre première note et commencez à construire votre réputation de Vendeur.</p>
+    </section>
+
+    <section id="contacto" class="formulario">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6">
+            <h3>Envoyez-nous vos suggestions et améliorations</h3>
+            
+            <form class="suggestion-form" method="GET" action="sugerencia.html">
+              <label for="contacto-nombre"><i class="fa-solid fa-user" aria-hidden="true"></i> Votre Nom</label>
+              <input type="text" id="contacto-nombre" name="nombre" placeholder="Votre nom complet" required tabindex="15" />
+              
+              <label for="contacto-email"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Votre E-mail</label>
+              <input type="email" id="contacto-email" name="email" placeholder="Votre adresse e-mail" required tabindex="16" />
+              
+              <label for="contacto-mensaje"><i class="fa-solid fa-comment-dots" aria-hidden="true"></i> Votre Message</label>
+              <textarea id="contacto-mensaje" name="mensaje" placeholder="Écrivez votre suggestion, question ou commentaire ici..." required tabindex="17"></textarea>
+              
+              <button class="submit" type="submit" tabindex="18"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Envoyer le Message</button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+        <div class="footer-content">
+            <div class="contactar">
+                <h4>Contact et Support</h4>
+                <ul class="footer-links">
+                    <li><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a href="mailto:contacto@edumapa.com" >contacto@edumapa.com</a></li>
+                    <li><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+34927000000" >+34 927 65 32 76</a></li>
+                    <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <a href="#" >Cáceres, Espagne</a></li>
+                </ul>
+            </div>
+            <div class="policies">
+                <h4>Légal</h4>
+                <ul>
+                    <li><a href="#" tabindex="27">Politique de Confidentialité</a></li>
+                    <li><a href="#" tabindex="28">Conditions d'Utilisation</a></li>
+                    <li><a href="#" tabindex="29">Politique des Cookies</a></li>
+                </ul>
+            </div>
+            <div class="social-links">
+                <h4>Suivez-nous</h4>
+                <ul class="footer-links">
+                    <li><a href="https://www.instagram.com" target="_blank" rel="noopener" tabindex="30" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+                    <li><a href="https://twitter.com" target="_blank" rel="noopener" tabindex="31" aria-label="Twitter"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i> Twitter/X</a></li>
+                    <li><a href="https://www.facebook.com" target="_blank" rel="noopener" tabindex="32" aria-label="Facebook"><i class="fa-brands fa-facebook" aria-hidden="true"></i> Facebook</a></li>
+                </ul>
+            </div>
+            <div class="footer-logo">
+                <div class="payment-methods">
+                    <i class="fa-brands fa-stripe icon-stripe" title="Stripe" aria-hidden="true"></i> 
+                    <i class="fa-brands fa-paypal icon-paypal" title="PayPal" aria-hidden="true"></i>
+                </div>
+                <img src="../img/logoedumapa2.png" alt="Logo EduMapa dans le pied de page">
+            </div>
+        </div>
+         <div class="footer-bottom text-center">
+            <a href="https://edumapa.page.gd/">EduMapa</a> © 2026 by <a href="https://edumapa.page.gd/">Alba Noguera
+            </a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a><img
+                src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt=""><img
+                src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt=""><img
+                src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt=""><img
+                src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" alt="">
+        </div>
+    </footer>
+
+  </body>
+</html>
